@@ -1,9 +1,17 @@
+import { CardData } from '@/api/types'
 import React from 'react'
+import styles from '../styles/PokemonCard.module.css'
 
-export function PokemonCard(): JSX.Element {
+interface CardProps {
+  card: CardData;
+}
+
+export function PokemonCard(props: CardProps): JSX.Element {
+  const {card} = props
+
   return (
-    <img>
-    
-    </img>
+    <article className={styles.card}>
+      <img src={card.images.large} alt={card.name}/> 
+    </article>
   )
 }

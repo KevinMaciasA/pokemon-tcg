@@ -31,7 +31,7 @@ export interface CardData {
   rarity?: Rarity;
   nationalPokedexNumbers: number[];
   legalities: Legalities;
-  images: DatumImages;
+  images: Images;
   tcgplayer?: Tcgplayer;
   cardmarket?: Cardmarket;
   evolvesTo?: string[];
@@ -85,7 +85,7 @@ export enum UpdatedAt {
   The20230413 = "2023/04/13",
 }
 
-export interface DatumImages {
+export interface Images {
   small: string;
   large: string;
 }
